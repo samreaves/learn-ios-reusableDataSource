@@ -6,6 +6,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     var store: MessageListDataSource = MessageListDataSource()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = store
     }
