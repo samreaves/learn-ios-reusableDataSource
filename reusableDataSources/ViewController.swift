@@ -1,20 +1,12 @@
-//
-//  ViewController.swift
-//  reusableDataSources
-//
-//  Created by Sam Reaves on 3/21/19.
-//  Copyright © 2019 Sam Reaves. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var store: MessageListDataSource = MessageListDataSource()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.delegate = self
+        tableView.dataSource = store
     }
-
-
 }
-

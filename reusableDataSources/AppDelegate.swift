@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  reusableDataSources
-//
-//  Created by Sam Reaves on 3/21/19.
-//  Copyright © 2019 Sam Reaves. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

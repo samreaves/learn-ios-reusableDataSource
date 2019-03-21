@@ -14,6 +14,7 @@
 		FD1B2EE622440C6E0040E843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1B2EE422440C6E0040E843 /* LaunchScreen.storyboard */; };
 		FD1B2EF122440C6E0040E843 /* reusableDataSourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2EF022440C6E0040E843 /* reusableDataSourcesTests.swift */; };
 		FD1B2EFC22440C6E0040E843 /* reusableDataSourcesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2EFB22440C6E0040E843 /* reusableDataSourcesUITests.swift */; };
+		FD1B2F0A224416330040E843 /* MessageListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2F09224416330040E843 /* MessageListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FD1B2EF722440C6E0040E843 /* reusableDataSourcesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reusableDataSourcesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B2EFB22440C6E0040E843 /* reusableDataSourcesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reusableDataSourcesUITests.swift; sourceTree = "<group>"; };
 		FD1B2EFD22440C6E0040E843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1B2F09224416330040E843 /* MessageListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FD1B2EE222440C6E0040E843 /* Assets.xcassets */,
 				FD1B2EE422440C6E0040E843 /* LaunchScreen.storyboard */,
 				FD1B2EE722440C6E0040E843 /* Info.plist */,
+				FD1B2F09224416330040E843 /* MessageListDataSource.swift */,
 			);
 			path = reusableDataSources;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1B2F0A224416330040E843 /* MessageListDataSource.swift in Sources */,
 				FD1B2EDE22440C6C0040E843 /* ViewController.swift in Sources */,
 				FD1B2EDC22440C6C0040E843 /* AppDelegate.swift in Sources */,
 			);
