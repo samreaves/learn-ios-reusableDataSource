@@ -14,12 +14,12 @@ class MessageListDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let message = self.messages[indexPath.row]
         let reuseIdentifier = "message"
-        let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: reuseIdentifier)
         
-        cell?.textLabel?.text = message.title
-        cell?.detailTextLabel?.text = message.preview
-        
-        return cell!
+        cell.textLabel?.text = message.title
+        cell.detailTextLabel?.text = message.preview
+
+        return cell
     }
 }
 
