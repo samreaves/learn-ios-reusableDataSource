@@ -10,7 +10,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dataSource = TableViewDataSource(models: store.messages, reuseIdentifier: "message") { message, cell i
+        let dataSource = TableViewDataSource(models: store.messages, reuseIdentifier: "message") { message, cell in
             cell.textLabel?.text = message.title
             cell.detailTextLabel?.text = message.preview
         }
