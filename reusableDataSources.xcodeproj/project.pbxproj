@@ -14,7 +14,10 @@
 		FD1B2EE622440C6E0040E843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1B2EE422440C6E0040E843 /* LaunchScreen.storyboard */; };
 		FD1B2EF122440C6E0040E843 /* reusableDataSourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2EF022440C6E0040E843 /* reusableDataSourcesTests.swift */; };
 		FD1B2EFC22440C6E0040E843 /* reusableDataSourcesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2EFB22440C6E0040E843 /* reusableDataSourcesUITests.swift */; };
-		FD1B2F0A224416330040E843 /* MessageListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2F09224416330040E843 /* MessageListDataSource.swift */; };
+		FD1B2F0A224416330040E843 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1B2F09224416330040E843 /* TableViewDataSource.swift */; };
+		FD89F368224949A9003AE5CC /* MessagesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD89F367224949A9003AE5CC /* MessagesStore.swift */; };
+		FD89F36C22494A0E003AE5CC /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD89F36A22494A0E003AE5CC /* MessageCell.swift */; };
+		FD89F36D22494A0E003AE5CC /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD89F36B22494A0E003AE5CC /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,10 @@
 		FD1B2EF722440C6E0040E843 /* reusableDataSourcesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reusableDataSourcesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1B2EFB22440C6E0040E843 /* reusableDataSourcesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reusableDataSourcesUITests.swift; sourceTree = "<group>"; };
 		FD1B2EFD22440C6E0040E843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD1B2F09224416330040E843 /* MessageListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListDataSource.swift; sourceTree = "<group>"; };
+		FD1B2F09224416330040E843 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		FD89F367224949A9003AE5CC /* MessagesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesStore.swift; sourceTree = "<group>"; };
+		FD89F36A22494A0E003AE5CC /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		FD89F36B22494A0E003AE5CC /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,15 @@
 		FD1B2EDA22440C6C0040E843 /* reusableDataSources */ = {
 			isa = PBXGroup;
 			children = (
+				FD89F369224949F9003AE5CC /* TableViewCells */,
 				FD1B2EDB22440C6C0040E843 /* AppDelegate.swift */,
 				FD1B2EDD22440C6C0040E843 /* ViewController.swift */,
 				FD1B2EDF22440C6C0040E843 /* Main.storyboard */,
 				FD1B2EE222440C6E0040E843 /* Assets.xcassets */,
 				FD1B2EE422440C6E0040E843 /* LaunchScreen.storyboard */,
 				FD1B2EE722440C6E0040E843 /* Info.plist */,
-				FD1B2F09224416330040E843 /* MessageListDataSource.swift */,
+				FD1B2F09224416330040E843 /* TableViewDataSource.swift */,
+				FD89F367224949A9003AE5CC /* MessagesStore.swift */,
 			);
 			path = reusableDataSources;
 			sourceTree = "<group>";
@@ -126,6 +134,15 @@
 				FD1B2EFD22440C6E0040E843 /* Info.plist */,
 			);
 			path = reusableDataSourcesUITests;
+			sourceTree = "<group>";
+		};
+		FD89F369224949F9003AE5CC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FD89F36A22494A0E003AE5CC /* MessageCell.swift */,
+				FD89F36B22494A0E003AE5CC /* MessageCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1B2EE622440C6E0040E843 /* LaunchScreen.storyboard in Resources */,
+				FD89F36D22494A0E003AE5CC /* MessageCell.xib in Resources */,
 				FD1B2EE322440C6E0040E843 /* Assets.xcassets in Resources */,
 				FD1B2EE122440C6C0040E843 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1B2F0A224416330040E843 /* MessageListDataSource.swift in Sources */,
+				FD1B2F0A224416330040E843 /* TableViewDataSource.swift in Sources */,
+				FD89F36C22494A0E003AE5CC /* MessageCell.swift in Sources */,
 				FD1B2EDE22440C6C0040E843 /* ViewController.swift in Sources */,
+				FD89F368224949A9003AE5CC /* MessagesStore.swift in Sources */,
 				FD1B2EDC22440C6C0040E843 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
